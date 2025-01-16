@@ -1,0 +1,18 @@
+portfolio/
+├── backend/
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── main.py
+│   │   ├── models.py
+│   │   └── routes/
+│   │       ├── __init__.py
+│   │       └── portfolio.py
+│   ├── requirements.txt
+│   └── config.py
+└── frontend/
+    ├── public/
+    ├── src/
+    │   ├── components/
+    │   ├── pages/
+    │   └── App.js
+    └── package.json 
