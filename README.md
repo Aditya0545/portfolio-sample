@@ -200,4 +200,4 @@ The production files will be in the `build` folder.
 This project is licensed under the MIT License.
 
 ---
-Created by [Your Name] - [Your Email]
+Created by Aditya Kumar - adityakumar2019.ak@gmail.com
