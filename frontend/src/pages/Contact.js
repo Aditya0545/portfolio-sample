@@ -1,9 +1,10 @@
 import React from 'react';
+import { contactContent } from '../data/content';
 
 function Contact() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8 text-center md:text-left">Contact Me</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center md:text-left">{contactContent.title}</h1>
       <div className="max-w-2xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-6">
           <form className="space-y-6">
@@ -15,7 +16,7 @@ function Contact() {
                 type="text"
                 id="name"
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Your name"
+                placeholder={contactContent.form.namePlaceholder}
               />
             </div>
             <div>
@@ -49,7 +50,7 @@ function Contact() {
           </form>
           
           <div className="mt-8 pt-8 border-t">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Other Ways to Connect</h2>
+            <h2 className="text-xl font-bold text-gray-800 mb-4">{contactContent.connectSection.title}</h2>
             <div className="space-y-4">
               <p className="flex items-center text-gray-600">
                 <svg className="w-6 h-6 mr-3" fill="currentColor" viewBox="0 0 20 20">

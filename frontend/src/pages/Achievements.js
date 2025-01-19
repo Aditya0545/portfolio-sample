@@ -1,49 +1,5 @@
 import React from 'react';
-
-const achievements = [
-    {
-        id: 1,
-        title: "Innovation Award - Smart City Hackathon",
-        description: "Won first place for developing an AI-powered traffic management system that reduced congestion by 30% in simulation tests.",
-        date: "2024-01-15",
-        url: "https://smartcity-hackathon.com/winners"
-    },
-    {
-        id: 2,
-        title: "Published Research Paper",
-        description: "Research on 'Optimizing Neural Networks for Edge Devices' published in IEEE International Conference on AI & Mobile Computing.",
-        date: "2023-11-20",
-        url: "https://ieee.org/papers/neural-networks"
-    },
-    {
-        id: 3,
-        title: "Environmental Tech Innovation",
-        description: "Developed a machine learning model that helps reduce energy consumption in buildings by 25%, recognized by Green Tech Awards.",
-        date: "2023-09-10",
-        url: "https://greentech-awards.com/2023"
-    },
-    {
-        id: 4,
-        title: "Full Stack Development Certification",
-        description: "Completed advanced certification in Full Stack Development with specialization in AI and Cloud Technologies.",
-        date: "2023-07-15",
-        url: "https://certification.dev/verify"
-    },
-    {
-        id: 5,
-        title: "Open Source Impact",
-        description: "Created a popular open-source library for AI model optimization, garnering over 1000+ stars on GitHub.",
-        date: "2023-05-01",
-        url: "https://github.com/username/ai-optimizer"
-    },
-    {
-        id: 6,
-        title: "Tech Community Leadership",
-        description: "Led a community of 500+ developers, organizing workshops and mentoring sessions on AI and web development.",
-        date: "2023-03-20",
-        url: "https://tech-community.org/leadership"
-    }
-];
+import { achievements } from '../data/content';
 
 function Achievements() {
     return (

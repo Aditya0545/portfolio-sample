@@ -1,43 +1,5 @@
 import React from 'react';
-
-const projects = [
-    {
-        id: 1,
-        title: "AI-Powered Code Assistant",
-        description: "Developed an intelligent code assistant that helps developers write better code by providing real-time suggestions and identifying potential bugs using machine learning.",
-        technologies: ["Python", "TensorFlow", "NLP", "FastAPI", "React", "Docker"],
-        github_url: "https://github.com/username/code-assistant",
-        live_url: "https://code-assistant-demo.com",
-        image_url: "https://via.placeholder.com/800x600?text=AI+Code+Assistant"
-    },
-    {
-        id: 2,
-        title: "Smart Home Automation System",
-        description: "Created a comprehensive IoT-based home automation system that controls lighting, temperature, and security using voice commands and mobile app interface.",
-        technologies: ["Python", "React Native", "IoT", "MongoDB", "Node.js", "AWS"],
-        github_url: "https://github.com/username/smart-home",
-        live_url: "https://smart-home-demo.com",
-        image_url: "https://via.placeholder.com/800x600?text=Smart+Home+System"
-    },
-    {
-        id: 3,
-        title: "Health & Fitness Tracker",
-        description: "Built a comprehensive fitness tracking application that monitors workouts, nutrition, and provides personalized recommendations using machine learning algorithms.",
-        technologies: ["React", "Node.js", "PostgreSQL", "TensorFlow", "GraphQL", "AWS"],
-        github_url: "https://github.com/username/fitness-tracker",
-        live_url: "https://fitness-tracker-demo.com",
-        image_url: "https://via.placeholder.com/800x600?text=Fitness+Tracker"
-    },
-    {
-        id: 4,
-        title: "Sustainable Energy Monitor",
-        description: "Designed a system to monitor and optimize energy consumption in buildings using IoT sensors and providing real-time analytics and recommendations.",
-        technologies: ["Python", "React", "IoT", "InfluxDB", "TensorFlow", "Docker"],
-        github_url: "https://github.com/username/energy-monitor",
-        live_url: "https://energy-monitor-demo.com",
-        image_url: "https://via.placeholder.com/800x600?text=Energy+Monitor"
-    }
-];
+import { projects } from '../data/content';
 
 function Projects() {
     return (

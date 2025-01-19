@@ -1,47 +1,5 @@
 import React from 'react';
-
-// Static experience data - Add or modify experiences here
-const experiences = [
-    {
-        id: 1,
-        company: "TechVision AI",
-        position: "Senior Full Stack Developer",
-        start_date: "2022-06",    // Format: YYYY-MM
-        end_date: "Present",      // Use "Present" for current position
-        description: "Leading a team of developers in building AI-powered web applications. Implemented machine learning models for predictive analytics and automated decision-making systems.",
-        technologies: ["Python", "React", "TensorFlow", "AWS", "Docker", "PostgreSQL"]
-    },
-    // Experience 2
-    {
-        id: 2,
-        company: "CloudScale Solutions",
-        position: "Full Stack Developer",
-        start_date: "2020-03",
-        end_date: "2022-05",
-        description: "Developed scalable cloud applications and microservices. Improved system performance by 40% through optimization and implementing caching strategies.",
-        technologies: ["Node.js", "React", "MongoDB", "Redis", "Azure", "Kubernetes"]
-    },
-    // Experience 3
-    {
-        id: 3,
-        company: "DataSmart Analytics",
-        position: "Software Engineer",
-        start_date: "2018-07",
-        end_date: "2020-02",
-        description: "Built data analytics dashboards and real-time monitoring systems. Implemented ETL pipelines and data visualization solutions for business intelligence.",
-        technologies: ["Python", "Django", "PostgreSQL", "ElasticSearch", "D3.js", "Redis"]
-    },
-    // Experience 4 - Most junior position
-    {
-        id: 4,
-        company: "InnoTech Startups",
-        position: "Junior Developer",
-        start_date: "2017-01",
-        end_date: "2018-06",
-        description: "Worked on multiple startup projects developing MVPs and prototypes. Gained hands-on experience with modern web technologies and agile development.",
-        technologies: ["JavaScript", "React", "Node.js", "MongoDB", "Git", "AWS"]
-    }
-];
+import { experiences } from '../data/content';
 
 function Experience() {
     return (

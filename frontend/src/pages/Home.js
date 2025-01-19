@@ -1,43 +1,41 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { homeContent } from '../data/content';
 
 function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-      <div className="container mx-auto px-4 py-16 md:py-32">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">
-              Hi, I'm <span className="text-blue-400">Your Name</span>
+    <div className="min-h-screen bg-[#1a1f2e] -mt-16">
+      <div className="container mx-auto px-8 pt-32">
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <div className="text-white lg:max-w-2xl">
+            <h1 className="text-5xl lg:text-6xl font-bold mb-6">
+              {homeContent.greeting} <span className="text-[#4B9BFF]">{homeContent.name}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-gray-300 mb-8">
-              Full Stack Developer | Python Expert | Open Source Contributor
+            <p className="text-xl text-gray-300 mb-12">
+              {homeContent.role}
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link
-                to="/projects"
-                className="px-8 py-3 bg-blue-600 rounded-full hover:bg-blue-700 transition-colors duration-300"
+            <div className="flex gap-4">
+              <Link 
+                to="/projects" 
+                className="bg-[#4B9BFF] text-white px-8 py-3 rounded-full hover:bg-[#3d8af7] transition-colors"
               >
-                View Projects
+                {homeContent.buttons.projects}
               </Link>
-              <Link
-                to="/contact"
-                className="px-8 py-3 border-2 border-white rounded-full hover:bg-white hover:text-gray-900 transition-colors duration-300"
+              <Link 
+                to="/contact" 
+                className="border border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-[#1a1f2e] transition-colors"
               >
-                Contact Me
+                {homeContent.buttons.contact}
               </Link>
             </div>
           </div>
-          <div className="md:w-1/2">
-            <div className="relative">
-              {/* Add your profile image or animation here */}
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-blue-400 mx-auto overflow-hidden">
-                <img
-                  src="/your-profile-image.jpg"
-                  alt="Profile"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+          <div className="mt-12 lg:mt-0">
+            <div className="w-72 h-72 lg:w-96 lg:h-96 rounded-full bg-[#4B9BFF] overflow-hidden">
+              <img 
+                src={homeContent.profileImage} 
+                alt={homeContent.name}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
