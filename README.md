@@ -21,87 +21,37 @@ cd portfolio-sample
 
 2. **Frontend Setup**
 
-bash
+open bash terminal
 Navigate to frontend directory
-cd frontend
+> cd frontend
 Install dependencies
-npm install
+> npm install
 Start the development server
-npm start
+> npm start
 
 The website will be available at: http://localhost:3000
 
-## Project Structure
-portfolio-sample/
-├── frontend/
-│ ├── public/
-│ │ └── index.html
-│ ├── src/
-│ │ ├── components/
-│ │ │ └── Navbar.js
-│ │ ├── pages/
-│ │ │ ├── Home.js # Landing page
-│ │ │ ├── Projects.js # Projects showcase
-│ │ │ ├── Experience.js # Work experience
-│ │ │ ├── Achievements.js # Achievements
-│ │ │ └── Contact.js # Contact form
-│ │ └── App.js # Main component
-│ ├── package.json
-│ └── tailwind.config.js
-└── README.md
+## Pro
 
 
 ## Available Pages
 
-### 1. Home (/)
-- Landing page with introduction
-- Professional summary
-- Quick navigation links
+1. Home (/)
+2. Projects (/projects)
+3. Experience (/experience)
+4. Achievements (/achievements)
+5. Contact (/contact)
 
-### 2. Projects (/projects)
-- Portfolio of projects
-- Project cards with:
-  - Title and description
-  - Technologies used
-  - Links to live demo and code
-  - Project images
-
-### 3. Experience (/experience)
-- Professional experience timeline
-- Detailed work history
-- Skills and technologies
-
-### 4. Achievements (/achievements)
-- Professional certifications
-- Awards and recognition
-- Notable accomplishments
-
-### 5. Contact (/contact)
-- Contact form
-- Social media links
-- Professional contact details
 
 ## Customization
 
 ### 1. Modifying Projects
-Edit `src/pages/Projects.js`:
-
-javascript
-const projects = [
-{
-id: 1,
-title: "Your Project",
-description: "Project description",
-technologies: ["React", "Node.js", "MongoDB"],
-github_url: "https://github.com/...",
-live_url: "https://...",
-image_url: "https://..."
-}
-];
+for text modification do changes in frontend/src/data/content.js
+for uploading images -> frontend/public/images
 
 
 ### 2. Updating Experience
-Edit `src/pages/Experience.js`:
+Edit `src/data/content.js`:
 
 javascript
 const experiences = [
@@ -118,7 +68,7 @@ technologies: ["Tech1", "Tech2"]
 
 
 ### 3. Adding Achievements
-Edit `src/pages/Achievements.js`:
+Edit `src/data/content.js`:
 
 javascript
 const achievements = [
