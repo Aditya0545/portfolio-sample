@@ -46,7 +46,7 @@ The website will be available at: http://localhost:3000
 ## Customization
 
 ### 1. Modifying Projects
-for text modification do changes in frontend/src/data/content.js
+for text modification do changes in frontend/src/data/content.js <br/>
 for uploading images -> frontend/public/images
 
 
